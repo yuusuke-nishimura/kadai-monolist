@@ -4,7 +4,7 @@ class RankingsController < ApplicationController
     @items = Item.find(@ranking_counts.keys)
   end
   
-  def want
+  def have
     @ranking_counts = Have.ranking
     @items = Item.find(@ranking_counts.keys)
   end
